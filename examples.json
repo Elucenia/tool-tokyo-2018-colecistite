@@ -1,0 +1,69 @@
+[
+  {
+    "label": "Sem critérios: grau I",
+    "input": {},
+    "expected": {
+      "raw": {
+        "grade": 1
+      },
+      "main": "I",
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Leucócitos &gt; 18.000: grau II",
+    "input": {
+      "leuco": true
+    },
+    "expected": {
+      "raw": {
+        "grade": 2
+      },
+      "main": "II",
+      "level": "mid"
+    },
+    "originalInput": {
+      "leuco": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sintomas &gt; 72 h e gangrena: grau II",
+    "input": {
+      "tempo": true,
+      "local": true
+    },
+    "expected": {
+      "raw": {
+        "grade": 2
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "tempo": true,
+      "local": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Creatinina &gt; 2,0 com massa palpável: grau III",
+    "input": {
+      "renal": true,
+      "massa": true
+    },
+    "expected": {
+      "raw": {
+        "grade": 3
+      },
+      "main": "III",
+      "level": "high"
+    },
+    "originalInput": {
+      "renal": true,
+      "massa": true
+    },
+    "expandedZeroOptions": []
+  }
+]

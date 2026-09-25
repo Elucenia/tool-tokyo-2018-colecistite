@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-tokyo-2018-colecistite",
+  "version": "0.1.0",
+  "description": "Gravidade da colecistite aguda (Tokyo 2018)",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-tokyo-2018-colecistite.git"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "tool": {
+    "id": "tokyo-2018-colecistite",
+    "title": "Gravidade da colecistite aguda (Tokyo 2018)",
+    "short": "Grau I, II ou III e conduta pelas diretrizes de Tóquio",
+    "desc": "Classifique a gravidade da colecistite aguda pelas Diretrizes de Tóquio 2018 (TG18): grau I leve, II moderado ou III grave, com a conduta sugerida.",
+    "lead": "Classifica a colecistite aguda já diagnosticada em leve, moderada ou grave, pela presença de disfunção orgânica ou de inflamação local importante, e resume a conduta proposta pelas Diretrizes de Tóquio 2018.",
+    "spec": [
+      "cirurgia-do-aparelho-digestivo",
+      "cirurgia-geral",
+      "gastroenterologia",
+      "medicina-de-emergencia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "cardio",
+        "Grau III · Cardiovascular: hipotensão com dopamina ≥ 5 µg/kg/min ou qualquer dose de noradrenalina",
+        "chk",
+        []
+      ],
+      [
+        "neuro",
+        "Grau III · Neurológica: rebaixamento do nível de consciência",
+        "chk",
+        []
+      ],
+      [
+        "resp",
+        "Grau III · Respiratória: PaO₂/FiO₂ &lt; 300",
+        "chk",
+        []
+      ],
+      [
+        "renal",
+        "Grau III · Renal: oligúria ou creatinina &gt; 2,0 mg/dL",
+        "chk",
+        []
+      ],
+      [
+        "hepat",
+        "Grau III · Hepática: INR &gt; 1,5",
+        "chk",
+        []
+      ],
+      [
+        "hemato",
+        "Grau III · Hematológica: plaquetas &lt; 100.000/mm³",
+        "chk",
+        []
+      ],
+      [
+        "leuco",
+        "Grau II · Leucócitos &gt; 18.000/mm³",
+        "chk",
+        []
+      ],
+      [
+        "massa",
+        "Grau II · Massa palpável e dolorosa no hipocôndrio direito",
+        "chk",
+        []
+      ],
+      [
+        "tempo",
+        "Grau II · Sintomas há mais de 72 horas",
+        "chk",
+        []
+      ],
+      [
+        "local",
+        "Grau II · Inflamação local importante (gangrena, abscesso pericolecístico ou hepático, peritonite biliar, colecistite enfisematosa)",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p><strong>Grau III (grave):</strong> qualquer disfunção orgânica listada.</p><p><strong>Grau II (moderado):</strong> sem disfunção orgânica e com ao menos um critério de inflamação local importante.</p><p><strong>Grau I (leve):</strong> colecistite em paciente sem critérios de grau II ou III.</p>",
+    "table": [
+      [
+        "Grau",
+        "Conduta sugerida (TG18)"
+      ],
+      [
+        "I – leve",
+        "Colecistectomia laparoscópica precoce, se o risco cirúrgico (Charlson, ASA) permitir"
+      ],
+      [
+        "II – moderado",
+        "Colecistectomia laparoscópica precoce em centro experiente; se alto risco, tratamento clínico e drenagem da vesícula quando necessário"
+      ],
+      [
+        "III – grave",
+        "Suporte de órgãos; colecistectomia precoce só com fatores favoráveis em centro experiente; senão, drenagem urgente ou precoce"
+      ]
+    ],
+    "tips": [
+      "A classificação pressupõe o diagnóstico de colecistite pelos critérios TG18: sinal local (Murphy, dor ou massa no hipocôndrio direito) + sinal sistêmico (febre, PCR ou leucocitose) + imagem compatível.",
+      "Colha hemocultura e cultura de bile nos graus II e III; o antibiótico é parte do tratamento em todos os graus.",
+      "No grau III, disfunção cardiovascular ou renal que se reverte rapidamente permite considerar a cirurgia precoce; icterícia, disfunção neurológica ou respiratória são fatores desfavoráveis.",
+      "A drenagem percutânea da vesícula (colecistostomia) é a ponte usual no paciente grave ou de alto risco cirúrgico.",
+      "Reclassifique se o quadro mudar: um grau I pode evoluir para III em horas."
+    ],
+    "sources": [
+      [
+        "Yokoe M et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos). J Hepatobiliary Pancreat Sci, 2018.",
+        "https://doi.org/10.1002/jhbp.515"
+      ],
+      [
+        "Okamoto K et al. Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis. J Hepatobiliary Pancreat Sci, 2018.",
+        "https://doi.org/10.1002/jhbp.516"
+      ]
+    ],
+    "cases": [
+      [
+        "Sem critérios: grau I",
+        [],
+        {
+          "raw": {
+            "grade": 1
+          },
+          "main": "I",
+          "level": "low"
+        }
+      ],
+      [
+        "Leucócitos &gt; 18.000: grau II",
+        {
+          "leuco": true
+        },
+        {
+          "raw": {
+            "grade": 2
+          },
+          "main": "II",
+          "level": "mid"
+        }
+      ],
+      [
+        "Sintomas &gt; 72 h e gangrena: grau II",
+        {
+          "tempo": true,
+          "local": true
+        },
+        {
+          "raw": {
+            "grade": 2
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Creatinina &gt; 2,0 com massa palpável: grau III",
+        {
+          "renal": true,
+          "massa": true
+        },
+        {
+          "raw": {
+            "grade": 3
+          },
+          "main": "III",
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
