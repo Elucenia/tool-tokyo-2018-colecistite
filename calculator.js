@@ -1,11 +1,11 @@
-/* tool-tokyo-2018-colecistite · Elucenia · https://github.com/Elucenia/tool-tokyo-2018-colecistite
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-tokyo-2018-colecistite · ELUCENIA · https://github.com/Elucenia/tool-tokyo-2018-colecistite
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"tokyo-2018-colecistite","title":"Gravidade da colecistite aguda (Tokyo 2018)","fields":[["cardio","Grau III · Cardiovascular: hipotensão com dopamina ≥ 5 µg/kg/min ou qualquer dose de noradrenalina","chk",[]],["neuro","Grau III · Neurológica: rebaixamento do nível de consciência","chk",[]],["resp","Grau III · Respiratória: PaO₂/FiO₂ &lt; 300","chk",[]],["renal","Grau III · Renal: oligúria ou creatinina &gt; 2,0 mg/dL","chk",[]],["hepat","Grau III · Hepática: INR &gt; 1,5","chk",[]],["hemato","Grau III · Hematológica: plaquetas &lt; 100.000/mm³","chk",[]],["leuco","Grau II · Leucócitos &gt; 18.000/mm³","chk",[]],["massa","Grau II · Massa palpável e dolorosa no hipocôndrio direito","chk",[]],["tempo","Grau II · Sintomas há mais de 72 horas","chk",[]],["local","Grau II · Inflamação local importante (gangrena, abscesso pericolecístico ou hepático, peritonite biliar, colecistite enfisematosa)","chk",[]]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

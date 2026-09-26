@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Se usar este pacote em pesquisa, palestra ou produto, cite-o como abaixo."
-title: "tool-tokyo-2018-colecistite: Gravidade da colecistite aguda (Tokyo 2018) (Elucenia)"
+title: "tool-tokyo-2018-colecistite: Gravidade da colecistite aguda (Tokyo 2018) (ELUCENIA)"
 abstract: "Código de integração, sem dependências, que reproduz a fórmula ou escore Gravidade da colecistite aguda (Tokyo 2018) para navegador e Node.js, com casos de referência e testes. Reprodução técnica; sem validação clínica independente."
 type: software
 version: 0.1.0
@@ -16,7 +16,7 @@ authors:
     city: Toledo
     region: Paraná
     country: BR
-  - name: Elucenia
+  - name: ELUCENIA
     website: "https://elucenia.org"
 keywords:
   - elucenia
