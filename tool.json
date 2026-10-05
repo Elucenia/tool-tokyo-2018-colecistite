@@ -5,101 +5,76 @@
     "short": "Grau I, II ou III e conduta pelas diretrizes de Tóquio",
     "desc": "Classifique a gravidade da colecistite aguda pelas Diretrizes de Tóquio 2018 (TG18): grau I leve, II moderado ou III grave, com a conduta sugerida.",
     "lead": "Classifica a colecistite aguda já diagnosticada em leve, moderada ou grave, pela presença de disfunção orgânica ou de inflamação local importante, e resume a conduta proposta pelas Diretrizes de Tóquio 2018.",
+    "kind": "Calculadora",
     "spec": [
       "cirurgia-do-aparelho-digestivo",
       "cirurgia-geral",
       "gastroenterologia",
       "medicina-de-emergencia"
     ],
-    "tier": 1,
     "fields": [
       [
         "cardio",
         "Grau III · Cardiovascular: hipotensão com dopamina ≥ 5 µg/kg/min ou qualquer dose de noradrenalina",
         "chk",
-        []
+        {}
       ],
       [
         "neuro",
         "Grau III · Neurológica: rebaixamento do nível de consciência",
         "chk",
-        []
+        {}
       ],
       [
         "resp",
         "Grau III · Respiratória: PaO₂/FiO₂ &lt; 300",
         "chk",
-        []
+        {}
       ],
       [
         "renal",
         "Grau III · Renal: oligúria ou creatinina &gt; 2,0 mg/dL",
         "chk",
-        []
+        {}
       ],
       [
         "hepat",
         "Grau III · Hepática: INR &gt; 1,5",
         "chk",
-        []
+        {}
       ],
       [
         "hemato",
         "Grau III · Hematológica: plaquetas &lt; 100.000/mm³",
         "chk",
-        []
+        {}
       ],
       [
         "leuco",
         "Grau II · Leucócitos &gt; 18.000/mm³",
         "chk",
-        []
+        {}
       ],
       [
         "massa",
         "Grau II · Massa palpável e dolorosa no hipocôndrio direito",
         "chk",
-        []
+        {}
       ],
       [
         "tempo",
         "Grau II · Sintomas há mais de 72 horas",
         "chk",
-        []
+        {}
       ],
       [
         "local",
         "Grau II · Inflamação local importante (gangrena, abscesso pericolecístico ou hepático, peritonite biliar, colecistite enfisematosa)",
         "chk",
-        []
+        {}
       ]
     ],
-    "formula": "<p><strong>Grau III (grave):</strong> qualquer disfunção orgânica listada.</p><p><strong>Grau II (moderado):</strong> sem disfunção orgânica e com ao menos um critério de inflamação local importante.</p><p><strong>Grau I (leve):</strong> colecistite em paciente sem critérios de grau II ou III.</p>",
-    "table": [
-      [
-        "Grau",
-        "Conduta sugerida (TG18)"
-      ],
-      [
-        "I – leve",
-        "Colecistectomia laparoscópica precoce, se o risco cirúrgico (Charlson, ASA) permitir"
-      ],
-      [
-        "II – moderado",
-        "Colecistectomia laparoscópica precoce em centro experiente; se alto risco, tratamento clínico e drenagem da vesícula quando necessário"
-      ],
-      [
-        "III – grave",
-        "Suporte de órgãos; colecistectomia precoce só com fatores favoráveis em centro experiente; senão, drenagem urgente ou precoce"
-      ]
-    ],
-    "tips": [
-      "A classificação pressupõe o diagnóstico de colecistite pelos critérios TG18: sinal local (Murphy, dor ou massa no hipocôndrio direito) + sinal sistêmico (febre, PCR ou leucocitose) + imagem compatível.",
-      "Colha hemocultura e cultura de bile nos graus II e III; o antibiótico é parte do tratamento em todos os graus.",
-      "No grau III, disfunção cardiovascular ou renal que se reverte rapidamente permite considerar a cirurgia precoce; icterícia, disfunção neurológica ou respiratória são fatores desfavoráveis.",
-      "A drenagem percutânea da vesícula (colecistostomia) é a ponte usual no paciente grave ou de alto risco cirúrgico.",
-      "Reclassifique se o quadro mudar: um grau I pode evoluir para III em horas."
-    ],
+    "formula": "<p><strong>Grau III (grave):</strong> qualquer disfunção orgânica listada.</p><p><strong>Grau II (moderado):</strong> sem disfunção orgânica de grau III e com qualquer um dos quatro critérios de grau II: leucócitos &gt; 18.000/mm³; massa palpável e dolorosa no hipocôndrio direito; sintomas há mais de 72 horas; ou inflamação local importante.</p><p><strong>Grau I (leve):</strong> colecistite em paciente sem critérios de grau II ou III.</p>",
     "sources": [
       [
         "Yokoe M et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos). J Hepatobiliary Pancreat Sci, 2018.",
@@ -163,9 +138,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -174,17 +146,677 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:53:44.606Z",
+      "total": 48,
+      "passed": 48,
+      "sourceRowCount": 48,
+      "uniqueApiInputCount": 48,
+      "sourceContextCount": 48,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "scope": "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "c04749b24892883ceede787ce689fa9f90b1c3aa68f2420d007c87e93158470d",
+        "total": 48,
+        "bankRowCount": 48,
+        "uniqueApiInputCount": 48,
+        "sourceContextCount": 48,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final30.json",
+            "sha256": "7767013002c928ad8b35fabfec35fa3edde886d78f8152cfb3624a112e1732a6"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final30.json",
+            "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+          "sha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0"
+        },
+        "packagingRequirement": "All bounded raw-only rows byte exact, original202 expectations and separate1178-peer witness receipt preserved"
+      },
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/six-primary-source-review-final30.json",
+            "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+          },
+          "item": {
+            "id": "tokyo-2018-colecistite",
+            "sourceIds": [
+              "tg18-yokoe-table7"
+            ],
+            "executedScope": "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+            "inputPopulation": "Acute cholecystitis already diagnosed according to the guideline; local/systemic/imaging diagnostic criteria are not input here.",
+            "sourceSupportedLimits": "Any of four moderate criteria qualifies without severe dysfunction, not only marked local inflammation. Absence of all severity flags implies gradeI only conditionally on actual acute cholecystitis.",
+            "findings": [
+              {
+                "kind": "restrictive-prose",
+                "confirmed": true,
+                "field": "formula",
+                "issue": "Current gradeII clause calls every moderate condition a criterion of marked local inflammation. Table7 also lists high WBC, tender mass and duration>72h.",
+                "minimalProposal": "Replace only that clause with any of the four listed gradeII criteria in the absence of gradeIII; retain all current threshold labels and arithmetic."
+              },
+              {
+                "kind": "private-verdict-prose",
+                "confirmed": true,
+                "field": "private verdict",
+                "issue": "Private gradeII verdict says marked local inflammation even for isolated WBC/mass/duration flags.",
+                "exposure": "Modern public adapter suppresses verdict; no claim of exposed clinical misclassification is made.",
+                "minimalProposal": "Use a neutral gradeII/moderate verdict if a separate legacy/dashboard display audit warrants it."
+              }
+            ],
+            "unchecked": [
+              "Laboratory threshold measurement",
+              "Diagnostic eligibility algorithm",
+              "Management recommendations",
+              "All1024 flag combinations"
+            ],
+            "current": {
+              "id": "tokyo-2018-colecistite",
+              "recordSha256": "440bd1e1d2a3e5e3cec5d158334dd7f11449e720ea5c65a2cb97099d5dd02bf7",
+              "frozenRecordFile": "reports/review-20261003/six-primary-frozen-inputs-final30/selected-records/tokyo-2018-colecistite.json",
+              "frozenRecordSha256": "ef1f93ed7a61c493a02ba817c34c31151221e7751d59ba4915b5588190139780",
+              "methodVersion": "Tokyo Guidelines 2018/Yokoe:gravidade I–III; disfunçãoorgânica ouinflamaçãoimportante",
+              "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/29032636/",
+              "adapters": [
+                {
+                  "file": "apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                  "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+                  "bytes": 5965,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                  "currentSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
+                },
+                {
+                  "file": "apps/dashboard/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                  "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+                  "bytes": 5965,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/dashboard/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                  "currentSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
+                },
+                {
+                  "file": "apps/command-center/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                  "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+                  "bytes": 5965,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/command-center/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                  "currentSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
+                }
+              ]
+            },
+            "clinicalApproval": "not-performed",
+            "professionalLanguageApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodConformance": "not-performed"
+          },
+          "sources": [
+            {
+              "id": "tg18-yokoe-table7",
+              "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jhbp.515",
+              "doi": "10.1002/jhbp.515",
+              "edition": "Yokoe et al., TG18 diagnostic criteria and severity grading, JHBP2018;25:41–54, unchanged TG13 severity definitions",
+              "access": "Official full HTML Table1 and Table7 directly read through web; direct PDF/HTML acquisition403. No PDF visual reading asserted.",
+              "readScope": "Table7 lines1187–1205: gradeIII any six organ dysfunctions; gradeII any four listed factors in the absence of gradeIII; gradeI confirmed acute cholecystitis withoutII/III. Table1: diagnosis requires local/systemic signs plus imaging for a definite diagnosis; acute hepatitis, other acute abdomen and chronic cholecystitis should be excluded.",
+              "tableRead": true,
+              "visualPdfRead": false,
+              "severeThresholds": [
+                "Dopamine≥5µg/kg/min or any norepinephrine",
+                "Decreased consciousness",
+                "PaO₂/FiO₂<300",
+                "Oliguria or creatinine>2.0mg/dL",
+                "INR>1.5",
+                "Platelets<100000/mm³"
+              ],
+              "moderateConditions": [
+                "WBC>18000/mm³",
+                "Palpable tender right-upper-quadrant mass",
+                "Symptoms>72 hours",
+                "Marked local inflammation such as gangrene or listed abscess/peritonitis/emphysematous findings"
+              ],
+              "excluded": "This tool takes already affirmed flags; numerical laboratory thresholds, diagnostic eligibility and management are not independently tested here."
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+      "evidenceSha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0",
+      "independentPeer": {
+        "status": "passed",
+        "file": "reports/review-20261003/six-source30-independent-peer-verify.json",
+        "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+        "scope": "Independent selected source expectations202 and additional1178 own witnesses; primary access limitations and clinical/rubric exclusions remain explicit.",
+        "sourcePeerInputCount": 1178,
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+          "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+          "app": "website"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/tokyo-2018-colecistite/calculator.js",
+          "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+          "app": "dashboard"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/tokyo-2018-colecistite/calculator.js",
+          "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+          "app": "command-center"
+        }
+      ],
+      "qualifications": [
+        "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+        "Laboratory threshold measurement",
+        "Diagnostic eligibility algorithm",
+        "Management recommendations",
+        "All1024 flag combinations",
+        "A technical pass is limited to the listed public raw fields. Patient examination, diagnosis, eligibility, rubric administration, prognosis, outcome, management, professional/official translation, rights and full-method conformance remain not-performed.",
+        "Four selected-code/class mapping tools are not validated as clinical raters by code-identity tests. Brown and TG18 require preaffirmed findings/diagnosis; the calculator does not establish them.",
+        "Bethesda risk means/ranges and all private clinical/mortality/recurrence outputs are excluded, even if observed in the donor report.",
+        "Three fresh Node/VM raw-only adapter replays plus original isolated Chromium observations; no fresh served UI or deployment binding.",
+        "Source28/29 and documentary-source30 recipes are separately owned; compose per ID and recalculate totals without stale whole-catalog replacement."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Tokyo Guidelines 2018/Yokoe (critérios TG13 mantidos): gravidade I–III; qualquer uma das 6 disfunções orgânicas define III; na sua ausência, qualquer um dos 4 critérios moderados define II",
+    "implementationVersion": "tokyo-2018-colecistite@native-2026-10-03+fcfccabe5252",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/29032636/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Grau III (grave): qualquer disfunção orgânica listada. Grau II (moderado): sem disfunção orgânica de grau III e com qualquer um dos quatro critérios de grau II: leucócitos > 18.000/mm³; massa palpável e dolorosa no hipocôndrio direito; sintomas há mais de 72 horas; ou inflamação local importante. Grau I (leve): colecistite em paciente sem critérios de grau II ou III.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "cardio",
+            "label": "Grau III · Cardiovascular: hipotensão com dopamina ≥ 5 µg/kg/min ou qualquer dose de noradrenalina",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "neuro",
+            "label": "Grau III · Neurológica: rebaixamento do nível de consciência",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "resp",
+            "label": "Grau III · Respiratória: PaO₂/FiO₂ &lt; 300",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "renal",
+            "label": "Grau III · Renal: oligúria ou creatinina &gt; 2,0 mg/dL",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hepat",
+            "label": "Grau III · Hepática: INR &gt; 1,5",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hemato",
+            "label": "Grau III · Hematológica: plaquetas &lt; 100.000/mm³",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "leuco",
+            "label": "Grau II · Leucócitos &gt; 18.000/mm³",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "massa",
+            "label": "Grau II · Massa palpável e dolorosa no hipocôndrio direito",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tempo",
+            "label": "Grau II · Sintomas há mais de 72 horas",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "local",
+            "label": "Grau II · Inflamação local importante (gangrena, abscesso pericolecístico ou hepático, peritonite biliar, colecistite enfisematosa)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "eec04f3b309e25f7eda4bb175596d89125bfa929a475650a9cc5e91c4ee75eb3"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Yokoe M et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos). J Hepatobiliary Pancreat Sci, 2018.",
+          "url": "https://doi.org/10.1002/jhbp.515",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos).",
+            "year": "2018",
+            "firstPublicationDate": "2018-01-09",
+            "doi": "10.1002/jhbp.515",
+            "pmid": "29032636",
+            "journal": "Journal of hepato-biliary-pancreatic sciences",
+            "authors": "Yokoe M, Hata J, Takada T, Strasberg SM, Asbun HJ, Wakabayashi G, Kozaka K, Endo I, Deziel DJ, Miura F, Okamoto K, Hwang TL, Huang WS, Ker CG, Chen MF, Han HS, Yoon YS, Choi IS, Yoon DS, Noguchi Y, Shikata S, Ukai T, Higuchi R, Gabata T, Mori Y, Iwashita Y, Hibi T, Jagannath P, Jonas E, Liau KH, Dervenis C, Gouma DJ, Cherqui D, Belli G, Garden OJ, Giménez ME, de Santibañes E, Suzuki K, Umezawa A, Supe AN, Pitt HA, Singh H, Chan ACW, Lau WY, Teoh AYB, Honda G, Sugioka A, Asai K, Gomi H, Itoi T, Kiriyama S, Yoshida M, Mayumi T, Matsumura N, Tokumura H, Kitano S, Hirata K, Inui K, Sumiyama Y, Yamamoto M."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/29032636/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "b939ae1462f1d493b5986ab6ade3dfaeea1f0d2ffec25760ce435489352783f2",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Okamoto K et al. Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis. J Hepatobiliary Pancreat Sci, 2018.",
+          "url": "https://doi.org/10.1002/jhbp.516",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis.",
+            "year": "2018",
+            "firstPublicationDate": "2017-12-20",
+            "doi": "10.1002/jhbp.516",
+            "pmid": "29045062",
+            "journal": "Journal of hepato-biliary-pancreatic sciences",
+            "authors": "Okamoto K, Suzuki K, Takada T, Strasberg SM, Asbun HJ, Endo I, Iwashita Y, Hibi T, Pitt HA, Umezawa A, Asai K, Han HS, Hwang TL, Mori Y, Yoon YS, Huang WS, Belli G, Dervenis C, Yokoe M, Kiriyama S, Itoi T, Jagannath P, Garden OJ, Miura F, Nakamura M, Horiguchi A, Wakabayashi G, Cherqui D, de Santibañes E, Shikata S, Noguchi Y, Ukai T, Higuchi R, Wada K, Honda G, Supe AN, Yoshida M, Mayumi T, Gouma DJ, Deziel DJ, Liau KH, Chen MF, Shibao K, Liu KH, Su CH, Chan ACW, Yoon DS, Choi IS, Jonas E, Chen XP, Fan ST, Ker CG, Giménez ME, Kitano S, Inomata M, Hirata K, Inui K, Sumiyama Y, Yamamoto M."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/29045062/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c67a05f5a60de6250119c848fb85f203cc30d6a7acc846d3bdbc4e712a86574d",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:53:44.606Z",
+        "total": 48,
+        "passed": 48,
+        "sourceRowCount": 48,
+        "uniqueApiInputCount": 48,
+        "sourceContextCount": 48,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "scope": "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "c04749b24892883ceede787ce689fa9f90b1c3aa68f2420d007c87e93158470d",
+          "total": 48,
+          "bankRowCount": 48,
+          "uniqueApiInputCount": 48,
+          "sourceContextCount": 48,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final30.json",
+              "sha256": "7767013002c928ad8b35fabfec35fa3edde886d78f8152cfb3624a112e1732a6"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final30.json",
+              "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+            "sha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0"
+          },
+          "packagingRequirement": "All bounded raw-only rows byte exact, original202 expectations and separate1178-peer witness receipt preserved"
+        },
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/six-primary-source-review-final30.json",
+              "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+            },
+            "item": {
+              "id": "tokyo-2018-colecistite",
+              "sourceIds": [
+                "tg18-yokoe-table7"
+              ],
+              "executedScope": "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+              "inputPopulation": "Acute cholecystitis already diagnosed according to the guideline; local/systemic/imaging diagnostic criteria are not input here.",
+              "sourceSupportedLimits": "Any of four moderate criteria qualifies without severe dysfunction, not only marked local inflammation. Absence of all severity flags implies gradeI only conditionally on actual acute cholecystitis.",
+              "findings": [
+                {
+                  "kind": "restrictive-prose",
+                  "confirmed": true,
+                  "field": "formula",
+                  "issue": "Current gradeII clause calls every moderate condition a criterion of marked local inflammation. Table7 also lists high WBC, tender mass and duration>72h.",
+                  "minimalProposal": "Replace only that clause with any of the four listed gradeII criteria in the absence of gradeIII; retain all current threshold labels and arithmetic."
+                },
+                {
+                  "kind": "private-verdict-prose",
+                  "confirmed": true,
+                  "field": "private verdict",
+                  "issue": "Private gradeII verdict says marked local inflammation even for isolated WBC/mass/duration flags.",
+                  "exposure": "Modern public adapter suppresses verdict; no claim of exposed clinical misclassification is made.",
+                  "minimalProposal": "Use a neutral gradeII/moderate verdict if a separate legacy/dashboard display audit warrants it."
+                }
+              ],
+              "unchecked": [
+                "Laboratory threshold measurement",
+                "Diagnostic eligibility algorithm",
+                "Management recommendations",
+                "All1024 flag combinations"
+              ],
+              "current": {
+                "id": "tokyo-2018-colecistite",
+                "recordSha256": "440bd1e1d2a3e5e3cec5d158334dd7f11449e720ea5c65a2cb97099d5dd02bf7",
+                "frozenRecordFile": "reports/review-20261003/six-primary-frozen-inputs-final30/selected-records/tokyo-2018-colecistite.json",
+                "frozenRecordSha256": "ef1f93ed7a61c493a02ba817c34c31151221e7751d59ba4915b5588190139780",
+                "methodVersion": "Tokyo Guidelines 2018/Yokoe:gravidade I–III; disfunçãoorgânica ouinflamaçãoimportante",
+                "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/29032636/",
+                "adapters": [
+                  {
+                    "file": "apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                    "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+                    "bytes": 5965,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                    "currentSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
+                  },
+                  {
+                    "file": "apps/dashboard/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                    "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+                    "bytes": 5965,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/dashboard/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                    "currentSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
+                  },
+                  {
+                    "file": "apps/command-center/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                    "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+                    "bytes": 5965,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/command-center/private/tool-code/tokyo-2018-colecistite/calculator.js",
+                    "currentSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
+                  }
+                ]
+              },
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "rightsApproval": "not-performed",
+              "fullMethodConformance": "not-performed"
+            },
+            "sources": [
+              {
+                "id": "tg18-yokoe-table7",
+                "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jhbp.515",
+                "doi": "10.1002/jhbp.515",
+                "edition": "Yokoe et al., TG18 diagnostic criteria and severity grading, JHBP2018;25:41–54, unchanged TG13 severity definitions",
+                "access": "Official full HTML Table1 and Table7 directly read through web; direct PDF/HTML acquisition403. No PDF visual reading asserted.",
+                "readScope": "Table7 lines1187–1205: gradeIII any six organ dysfunctions; gradeII any four listed factors in the absence of gradeIII; gradeI confirmed acute cholecystitis withoutII/III. Table1: diagnosis requires local/systemic signs plus imaging for a definite diagnosis; acute hepatitis, other acute abdomen and chronic cholecystitis should be excluded.",
+                "tableRead": true,
+                "visualPdfRead": false,
+                "severeThresholds": [
+                  "Dopamine≥5µg/kg/min or any norepinephrine",
+                  "Decreased consciousness",
+                  "PaO₂/FiO₂<300",
+                  "Oliguria or creatinine>2.0mg/dL",
+                  "INR>1.5",
+                  "Platelets<100000/mm³"
+                ],
+                "moderateConditions": [
+                  "WBC>18000/mm³",
+                  "Palpable tender right-upper-quadrant mass",
+                  "Symptoms>72 hours",
+                  "Marked local inflammation such as gangrene or listed abscess/peritonitis/emphysematous findings"
+                ],
+                "excluded": "This tool takes already affirmed flags; numerical laboratory thresholds, diagnostic eligibility and management are not independently tested here."
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+        "evidenceSha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0",
+        "independentPeer": {
+          "status": "passed",
+          "file": "reports/review-20261003/six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent selected source expectations202 and additional1178 own witnesses; primary access limitations and clinical/rubric exclusions remain explicit.",
+          "sourcePeerInputCount": 1178,
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+            "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+            "app": "website"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/tokyo-2018-colecistite/calculator.js",
+            "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+            "app": "dashboard"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/tokyo-2018-colecistite/calculator.js",
+            "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+            "app": "command-center"
+          }
+        ],
+        "qualifications": [
+          "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+          "Laboratory threshold measurement",
+          "Diagnostic eligibility algorithm",
+          "Management recommendations",
+          "All1024 flag combinations",
+          "A technical pass is limited to the listed public raw fields. Patient examination, diagnosis, eligibility, rubric administration, prognosis, outcome, management, professional/official translation, rights and full-method conformance remain not-performed.",
+          "Four selected-code/class mapping tools are not validated as clinical raters by code-identity tests. Brown and TG18 require preaffirmed findings/diagnosis; the calculator does not establish them.",
+          "Bethesda risk means/ranges and all private clinical/mortality/recurrence outputs are excluded, even if observed in the donor report.",
+          "Three fresh Node/VM raw-only adapter replays plus original isolated Chromium observations; no fresh served UI or deployment binding.",
+          "Source28/29 and documentary-source30 recipes are separately owned; compose per ID and recalculate totals without stale whole-catalog replacement."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+      "source30DocumentaryAmendment": {
+        "at": "2026-10-04T20:48:15.780Z",
+        "scope": "Targeted documentary source/edition clarification only. No engine, field, option code, arithmetic bank, historical fixture, clinical decision or approval mutation.",
+        "sourceReview": {
+          "file": "six-primary-source-review-final30.json",
+          "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+        },
+        "sourcePeer": {
+          "file": "six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent bounded primary/classification review; not clinical/rubric/rights approval"
+        },
+        "sourceIds": [
+          "tg18-yokoe-table7"
+        ],
+        "previousMethodVersion": "Tokyo Guidelines 2018/Yokoe:gravidade I–III; disfunçãoorgânica ouinflamaçãoimportante",
+        "previousLimits": "A edição TG18/TG13 mantém os critérios diagnósticos e de gravidade anteriores. A classificação requer suas definições clínicas e laboratoriais completas; o documento de manejo tem condições adicionais e deve ser considerado separadamente, sem deduzir uma conduta apenas da categoria.",
+        "previousFormula": "<p><strong>Grau III (grave):</strong> qualquer disfunção orgânica listada.</p><p><strong>Grau II (moderado):</strong> sem disfunção orgânica e com ao menos um critério de inflamação local importante.</p><p><strong>Grau I (leve):</strong> colecistite em paciente sem critérios de grau II ou III.</p>",
+        "previousCurrentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/29032636/",
+        "previousSourceLimitEvidence": {
+          "checkedAt": "2026-10-04T02:52:03.004Z",
+          "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+          "sourceReviewFile": "remaining-native-population-limits-review.json",
+          "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+          "readingOutcome": "review-outcome-recorded",
+          "unresolved": [
+            "Resumo não contém definições completas de disfunção orgânica/local nem fluxo de tratamento Okamoto 2018. Categoria não determina sozinha a conduta."
+          ],
+          "fullMethodConformanceReviewed": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "sourceAccess": [
+          {
+            "id": "tg18-yokoe-table7",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jhbp.515",
+            "edition": "Yokoe et al., TG18 diagnostic criteria and severity grading, JHBP2018;25:41–54, unchanged TG13 severity definitions",
+            "access": "Official full HTML Table1 and Table7 directly read through web; direct PDF/HTML acquisition403. No PDF visual reading asserted.",
+            "readScope": "Table7 lines1187–1205: gradeIII any six organ dysfunctions; gradeII any four listed factors in the absence of gradeIII; gradeI confirmed acute cholecystitis withoutII/III. Table1: diagnosis requires local/systemic signs plus imaging for a definite diagnosis; acute hepatitis, other acute abdomen and chronic cholecystitis should be excluded.",
+            "tableRead": true,
+            "visualPdfRead": false
+          }
+        ],
+        "sourceScopedTest": "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+        "fieldsUnchanged": true,
+        "casesUnchanged": true,
+        "engineUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed",
+        "releaseApproval": "not-performed",
+        "fullMethodConformance": false
+      },
+      "inputContractHashHistory": [
+        {
+          "hash": "3c1c4d45bf97158510cd2ae34bde6d7803808ee77f95c965da0d46d2ba36a31c",
+          "reason": "Source30 documentary formula amendment; previous formula/hash retained in the immutable donor recipe. No engine, input fields, source862 fixture or clinical-status change.",
+          "evidence": {
+            "file": "reports/review-20261003/source30-documentary-owned-candidate-r3.json",
+            "sha256": "886ec11f7084b08dcd705981f4018aad124595522f0ce37e649fef3728c1c9a0"
+          }
+        }
+      ],
+      "source30InputContractAmendment": {
+        "previousHash": "3c1c4d45bf97158510cd2ae34bde6d7803808ee77f95c965da0d46d2ba36a31c",
+        "currentHash": "eec04f3b309e25f7eda4bb175596d89125bfa929a475650a9cc5e91c4ee75eb3",
+        "definition": "SHA256 JSON.stringify({id,fields,formula,config:tool.config||null})",
+        "reason": "Semantic formula prose amended by source30 owned documentary recipe.",
+        "evidence": {
+          "file": "reports/review-20261003/source30-documentary-owned-candidate-r3.json",
+          "sha256": "886ec11f7084b08dcd705981f4018aad124595522f0ce37e649fef3728c1c9a0"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      }
+    },
+    "limits": "A edição TG18/TG13 mantém os critérios diagnósticos e de gravidade anteriores. A classificação requer suas definições clínicas e laboratoriais completas; o documento de manejo tem condições adicionais e deve ser considerado separadamente, sem deduzir uma conduta apenas da categoria. Na Tabela 7 da TG18, o grau II requer qualquer um dos quatro critérios listados, desde que não exista disfunção de grau III; não se limita à inflamação local importante. Esta verificação testa sinais já assinalados em uma colecistite previamente diagnosticada. Não testa a atribuição clínica dos sinais, os limites laboratoriais, a elegibilidade diagnóstica ou a conduta.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.004Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Observação clínica dos sinais, aplicação dos limites laboratoriais, elegibilidade diagnóstica e fluxograma de manejo não foram testados; a leitura da Tabela7 não é aprovação clínica."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "source30DocumentaryAmendment": {
+        "at": "2026-10-04T20:48:15.780Z",
+        "scope": "Targeted documentary source/edition clarification only. No engine, field, option code, arithmetic bank, historical fixture, clinical decision or approval mutation.",
+        "sourceReview": {
+          "file": "six-primary-source-review-final30.json",
+          "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+        },
+        "sourcePeer": {
+          "file": "six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent bounded primary/classification review; not clinical/rubric/rights approval"
+        },
+        "sourceIds": [
+          "tg18-yokoe-table7"
+        ],
+        "previousMethodVersion": "Tokyo Guidelines 2018/Yokoe:gravidade I–III; disfunçãoorgânica ouinflamaçãoimportante",
+        "previousLimits": "A edição TG18/TG13 mantém os critérios diagnósticos e de gravidade anteriores. A classificação requer suas definições clínicas e laboratoriais completas; o documento de manejo tem condições adicionais e deve ser considerado separadamente, sem deduzir uma conduta apenas da categoria.",
+        "previousFormula": "<p><strong>Grau III (grave):</strong> qualquer disfunção orgânica listada.</p><p><strong>Grau II (moderado):</strong> sem disfunção orgânica e com ao menos um critério de inflamação local importante.</p><p><strong>Grau I (leve):</strong> colecistite em paciente sem critérios de grau II ou III.</p>",
+        "previousCurrentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/29032636/",
+        "previousSourceLimitEvidence": {
+          "checkedAt": "2026-10-04T02:52:03.004Z",
+          "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+          "sourceReviewFile": "remaining-native-population-limits-review.json",
+          "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+          "readingOutcome": "review-outcome-recorded",
+          "unresolved": [
+            "Resumo não contém definições completas de disfunção orgânica/local nem fluxo de tratamento Okamoto 2018. Categoria não determina sozinha a conduta."
+          ],
+          "fullMethodConformanceReviewed": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "sourceAccess": [
+          {
+            "id": "tg18-yokoe-table7",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jhbp.515",
+            "edition": "Yokoe et al., TG18 diagnostic criteria and severity grading, JHBP2018;25:41–54, unchanged TG13 severity definitions",
+            "access": "Official full HTML Table1 and Table7 directly read through web; direct PDF/HTML acquisition403. No PDF visual reading asserted.",
+            "readScope": "Table7 lines1187–1205: gradeIII any six organ dysfunctions; gradeII any four listed factors in the absence of gradeIII; gradeI confirmed acute cholecystitis withoutII/III. Table1: diagnosis requires local/systemic signs plus imaging for a definite diagnosis; acute hepatitis, other acute abdomen and chronic cholecystitis should be excluded.",
+            "tableRead": true,
+            "visualPdfRead": false
+          }
+        ],
+        "sourceScopedTest": "GradeIII-over-II precedence for48 selected confirmed-cholecystitis flag patterns, including each of six severe and four moderate conditions and mixed states. Not an exhaustive2^10 rubric or diagnostic test.",
+        "fieldsUnchanged": true,
+        "casesUnchanged": true,
+        "engineUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed",
+        "releaseApproval": "not-performed",
+        "fullMethodConformance": false
+      }
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/tokyo-2018-colecistite/calculator.js",
+    "bytes": 5965,
+    "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "d90d2ed917400a76cc0a747bdcc9f65d2ea260021bf1efd964cd77908b1d409a",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "5a1445daa93b90e6637546a1ca4ee194de5d241d4453096696c788778589fb0d",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "5a1445daa93b90e6637546a1ca4ee194de5d241d4453096696c788778589fb0d",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

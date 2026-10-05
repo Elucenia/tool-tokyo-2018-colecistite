@@ -1,7 +1,22 @@
 [
   {
-    "label": "Sem critérios: grau I",
-    "input": {},
+    "id": "tokyo-2018-colecistite",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sem critérios: grau I",
+    "originalInput": [],
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
     "expected": {
       "raw": {
         "grade": 1
@@ -9,13 +24,44 @@
       "main": "I",
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "I",
+        ""
+      ],
+      "label": "Gravidade da colecistite aguda (TG18)",
+      "raw": {
+        "grade": 1
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Leucócitos &gt; 18.000: grau II",
-    "input": {
+    "id": "tokyo-2018-colecistite",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Leucócitos &gt; 18.000: grau II",
+    "originalInput": {
       "leuco": true
+    },
+    "input": {
+      "leuco": true,
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
     },
     "expected": {
       "raw": {
@@ -24,16 +70,45 @@
       "main": "II",
       "level": "mid"
     },
-    "originalInput": {
-      "leuco": true
+    "recordedResult": {
+      "main": [
+        "II",
+        ""
+      ],
+      "label": "Gravidade da colecistite aguda (TG18)",
+      "raw": {
+        "grade": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Sintomas &gt; 72 h e gangrena: grau II",
-    "input": {
+    "id": "tokyo-2018-colecistite",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Sintomas &gt; 72 h e gangrena: grau II",
+    "originalInput": {
       "tempo": true,
       "local": true
+    },
+    "input": {
+      "tempo": true,
+      "local": true,
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false
     },
     "expected": {
       "raw": {
@@ -41,17 +116,45 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "tempo": true,
-      "local": true
+    "recordedResult": {
+      "main": [
+        "II",
+        ""
+      ],
+      "label": "Gravidade da colecistite aguda (TG18)",
+      "raw": {
+        "grade": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Creatinina &gt; 2,0 com massa palpável: grau III",
-    "input": {
+    "id": "tokyo-2018-colecistite",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+    "originalInput": {
       "renal": true,
       "massa": true
+    },
+    "input": {
+      "renal": true,
+      "massa": true,
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "tempo": false,
+      "local": false
     },
     "expected": {
       "raw": {
@@ -60,10 +163,23 @@
       "main": "III",
       "level": "high"
     },
-    "originalInput": {
-      "renal": true,
-      "massa": true
+    "recordedResult": {
+      "main": [
+        "III",
+        ""
+      ],
+      "label": "Gravidade da colecistite aguda (TG18)",
+      "raw": {
+        "grade": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -1,0 +1,238 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cardio",
+    "input": {
+      "cardio": "2",
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cardio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean neuro",
+    "input": {
+      "cardio": false,
+      "neuro": "2",
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "neuro"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean resp",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": "2",
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "resp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean renal",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": "2",
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "renal"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hepat",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": "2",
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hepat"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hemato",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": "2",
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hemato"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean leuco",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": "2",
+      "massa": false,
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean massa",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": "2",
+      "tempo": false,
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "massa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tempo",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": "2",
+      "local": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean local",
+    "input": {
+      "cardio": false,
+      "neuro": false,
+      "resp": false,
+      "renal": false,
+      "hepat": false,
+      "hemato": false,
+      "leuco": false,
+      "massa": false,
+      "tempo": false,
+      "local": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "local"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

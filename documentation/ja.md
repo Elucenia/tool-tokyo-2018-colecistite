@@ -1,0 +1,99 @@
+<!-- ELUCENIA technical documentation · tokyo-2018-colecistite · ja · no clinical/professional/rights approval -->
+
+# 急性胆嚢炎の重症度（Tokyo 2018）
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/tokyo-2018-colecistite)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### グレードIII · 心血管：ドパミン ≥ 5 µg/kg/minまたは任意用量のノルアドレナリンを要する低血圧
+
+`cardio`
+
+### グレードIII · 神経：意識レベル低下
+
+`neuro`
+
+### グレードIII · 呼吸：PaO₂/FiO₂ \< 300
+
+`resp`
+
+### グレードIII · 腎：乏尿またはクレアチニン \> 2.0 mg/dL
+
+`renal`
+
+### グレードIII · 肝：INR \> 1.5
+
+`hepat`
+
+### グレードIII · 血液：血小板 \< 100000/mm³
+
+`hemato`
+
+### グレードII · 白血球 \> 18000/mm³
+
+`leuco`
+
+### グレードII · 右季肋部の圧痛を伴う腫瘤
+
+`massa`
+
+### グレードII · 症状が72時間を超えて持続
+
+`tempo`
+
+### グレードII · 高度局所炎症（壊疽、胆嚢周囲・肝膿瘍、胆汁性腹膜炎、気腫性胆嚢炎）
+
+`local`
+
+## 方法の版
+
+Tokyo Guidelines 2018/Yokoe（TG13基準を維持）：重症度I–III；6つの臓器障害のいずれかでIII度；いずれもない場合、4つの中等症基準のいずれかでII度
+
+## 記載された計算式
+
+III度（重症）：記載された臓器障害のいずれか。
+
+II度（中等症）：III度の臓器障害がなく、4つのII度基準のいずれかを満たす：白血球 \> 18000/mm³、右上腹部の触知可能な有痛性腫瘤、72時間を超える症状、または高度な局所炎症。
+
+I度（軽症）：II度またはIII度の基準を満たさない胆嚢炎患者。
+
+## 限界・対象集団
+
+TG18/TG13版は、従来の診断基準と重症度基準を維持しています。分類には完全な臨床・検査上の定義が必要です。管理に関する文書には追加の条件があるため、カテゴリーだけから対応方針を推論せず、別途検討する必要があります。 TG18の表7では、III度の障害がない場合に、列挙された四つの基準のいずれかでII度となり、高度な局所炎症だけに限定されない。この検証では、すでに診断された胆嚢炎で選択済みの所見をテストする。所見の臨床的判定、検査の閾値、診断上の適格性または対応方針はテストしない。
+
+## 参考文献
+
+- [Yokoe M et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis (with videos). J Hepatobiliary Pancreat Sci, 2018.](https://doi.org/10.1002/jhbp.515)
+
+- [Okamoto K et al. Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis. J Hepatobiliary Pancreat Sci, 2018.](https://doi.org/10.1002/jhbp.516)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026
