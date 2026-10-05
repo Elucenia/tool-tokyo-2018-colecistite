@@ -1,0 +1,1060 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "tokyo-2018-colecistite",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/tokyo-2018-colecistite/calculator.js",
+    "sha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+    "bytes": 5965
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "tokyo-2018-colecistite",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Sem critérios: grau I",
+      "originalInput": [],
+      "input": {
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "renal": false,
+        "hepat": false,
+        "hemato": false,
+        "leuco": false,
+        "massa": false,
+        "tempo": false,
+        "local": false
+      },
+      "amendments": [
+        {
+          "kind": "recorded-array-to-field-object",
+          "original": []
+        },
+        {
+          "field": "cardio",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "neuro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "resp",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "renal",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hepat",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "leuco",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "massa",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tempo",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "local",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "grade": 1
+        },
+        "main": "I",
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "I",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cardio": false,
+            "neuro": false,
+            "resp": false,
+            "renal": false,
+            "hepat": false,
+            "hemato": false,
+            "leuco": false,
+            "massa": false,
+            "tempo": false,
+            "local": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+          "startedAt": "2026-10-05T17:38:21.173Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "tokyo-2018-colecistite",
+              "main": [
+                "I",
+                ""
+              ],
+              "label": "Gravidade da colecistite aguda (TG18)",
+              "raw": {
+                "grade": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a445931c473c603501d2e3ec79ed50fdd783482ce8cbda3e892be159f20a370d",
+          "bytes": 161,
+          "elapsedMs": 6.142999999981839
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "startedAt": "2026-10-05T17:38:21.173Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "tokyo-2018-colecistite",
+            "main": [
+              "I",
+              ""
+            ],
+            "label": "Gravidade da colecistite aguda (TG18)",
+            "raw": {
+              "grade": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a445931c473c603501d2e3ec79ed50fdd783482ce8cbda3e892be159f20a370d",
+        "bytes": 161,
+        "elapsedMs": 6.142999999981839
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "I",
+            "obtained": "I",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "I",
+            "obtained": "I",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "tokyo-2018-colecistite",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Leucócitos &gt; 18.000: grau II",
+      "originalInput": {
+        "leuco": true
+      },
+      "input": {
+        "leuco": true,
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "renal": false,
+        "hepat": false,
+        "hemato": false,
+        "massa": false,
+        "tempo": false,
+        "local": false
+      },
+      "amendments": [
+        {
+          "field": "cardio",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "neuro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "resp",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "renal",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hepat",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "massa",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tempo",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "local",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "grade": 2
+        },
+        "main": "II",
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "II",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "leuco": true,
+            "cardio": false,
+            "neuro": false,
+            "resp": false,
+            "renal": false,
+            "hepat": false,
+            "hemato": false,
+            "massa": false,
+            "tempo": false,
+            "local": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+          "startedAt": "2026-10-05T17:38:21.473Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "tokyo-2018-colecistite",
+              "main": [
+                "II",
+                ""
+              ],
+              "label": "Gravidade da colecistite aguda (TG18)",
+              "raw": {
+                "grade": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "8fdee9cb7746955bd2eea30cde69007b385945b0e25b5fc384e64a9414511ece",
+          "bytes": 162,
+          "elapsedMs": 7.981300000014016
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "startedAt": "2026-10-05T17:38:21.473Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "tokyo-2018-colecistite",
+            "main": [
+              "II",
+              ""
+            ],
+            "label": "Gravidade da colecistite aguda (TG18)",
+            "raw": {
+              "grade": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "8fdee9cb7746955bd2eea30cde69007b385945b0e25b5fc384e64a9414511ece",
+        "bytes": 162,
+        "elapsedMs": 7.981300000014016
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "II",
+            "obtained": "II",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "II",
+            "obtained": "II",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "tokyo-2018-colecistite",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Sintomas &gt; 72 h e gangrena: grau II",
+      "originalInput": {
+        "tempo": true,
+        "local": true
+      },
+      "input": {
+        "tempo": true,
+        "local": true,
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "renal": false,
+        "hepat": false,
+        "hemato": false,
+        "leuco": false,
+        "massa": false
+      },
+      "amendments": [
+        {
+          "field": "cardio",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "neuro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "resp",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "renal",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hepat",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "leuco",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "massa",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "grade": 2
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "II",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tempo": true,
+            "local": true,
+            "cardio": false,
+            "neuro": false,
+            "resp": false,
+            "renal": false,
+            "hepat": false,
+            "hemato": false,
+            "leuco": false,
+            "massa": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+          "startedAt": "2026-10-05T17:38:21.786Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "tokyo-2018-colecistite",
+              "main": [
+                "II",
+                ""
+              ],
+              "label": "Gravidade da colecistite aguda (TG18)",
+              "raw": {
+                "grade": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "8fdee9cb7746955bd2eea30cde69007b385945b0e25b5fc384e64a9414511ece",
+          "bytes": 162,
+          "elapsedMs": 2.6646999999939
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "startedAt": "2026-10-05T17:38:21.786Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "tokyo-2018-colecistite",
+            "main": [
+              "II",
+              ""
+            ],
+            "label": "Gravidade da colecistite aguda (TG18)",
+            "raw": {
+              "grade": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "8fdee9cb7746955bd2eea30cde69007b385945b0e25b5fc384e64a9414511ece",
+        "bytes": 162,
+        "elapsedMs": 2.6646999999939
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "II",
+            "obtained": "II",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "tokyo-2018-colecistite",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+      "originalInput": {
+        "renal": true,
+        "massa": true
+      },
+      "input": {
+        "renal": true,
+        "massa": true,
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "hepat": false,
+        "hemato": false,
+        "leuco": false,
+        "tempo": false,
+        "local": false
+      },
+      "amendments": [
+        {
+          "field": "cardio",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "neuro",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "resp",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hepat",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemato",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "leuco",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tempo",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "local",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "grade": 3
+        },
+        "main": "III",
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "III",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "renal": true,
+            "massa": true,
+            "cardio": false,
+            "neuro": false,
+            "resp": false,
+            "hepat": false,
+            "hemato": false,
+            "leuco": false,
+            "tempo": false,
+            "local": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+          "startedAt": "2026-10-05T17:38:22.100Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "tokyo-2018-colecistite",
+              "main": [
+                "III",
+                ""
+              ],
+              "label": "Gravidade da colecistite aguda (TG18)",
+              "raw": {
+                "grade": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e63452d45fd4b5ab0fc8d9aadd51dd5392e85313b5311487dd2899541bd10849",
+          "bytes": 163,
+          "elapsedMs": 2.846800000028452
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/tokyo-2018-colecistite/calculate",
+        "startedAt": "2026-10-05T17:38:22.100Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "tokyo-2018-colecistite",
+            "main": [
+              "III",
+              ""
+            ],
+            "label": "Gravidade da colecistite aguda (TG18)",
+            "raw": {
+              "grade": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e63452d45fd4b5ab0fc8d9aadd51dd5392e85313b5311487dd2899541bd10849",
+        "bytes": 163,
+        "elapsedMs": 2.846800000028452
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "III",
+            "obtained": "III",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "III",
+            "obtained": "III",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
