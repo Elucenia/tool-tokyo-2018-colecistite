@@ -97,3 +97,43 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Grado I (lieve): senza criteri di grado II o III
+
+| Dettagli del risultato | |
+| --- | --- |
+| Condotta suggerita (TG18) | Colecistectomia laparoscopica precoce se il rischio chirurgico lo consente. |
+
+
+### 2
+
+Grado II (moderato): infiammazione locale importante
+
+| Dettagli del risultato | |
+| --- | --- |
+| Condotta suggerita (TG18) | Colecistectomia laparoscopica precoce in un centro esperto se il rischio chirurgico lo consente; altrimenti, trattamento medico e drenaggio se necessario. |
+
+
+### 3
+
+Grado II (moderato): infiammazione locale importante
+
+| Dettagli del risultato | |
+| --- | --- |
+| Condotta suggerita (TG18) | Colecistectomia laparoscopica precoce in un centro esperto se il rischio chirurgico lo consente; altrimenti, trattamento medico e drenaggio se necessario. |
+
+
+### 4
+
+Grado III (grave): colecistite acuta con disfunzione d’organo
+
+| Dettagli del risultato | |
+| --- | --- |
+| Condotta suggerita (TG18) | Supporto d’organo e antibiotico; colecistectomia precoce solo in un centro esperto e con criteri favorevoli, altrimenti drenaggio urgente o precoce della colecisti. |
+

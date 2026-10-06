@@ -97,3 +97,43 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Grado I (leve): sin criterios de grado II o III
+
+| Detalles del resultado | |
+| --- | --- |
+| Conducta sugerida (TG18) | Colecistectomía laparoscópica precoz si el riesgo quirúrgico lo permite. |
+
+
+### 2
+
+Grado II (moderada): inflamación local importante
+
+| Detalles del resultado | |
+| --- | --- |
+| Conducta sugerida (TG18) | Colecistectomía laparoscópica precoz en un centro con experiencia si el riesgo quirúrgico lo permite; de lo contrario, tratamiento médico y drenaje si es necesario. |
+
+
+### 3
+
+Grado II (moderada): inflamación local importante
+
+| Detalles del resultado | |
+| --- | --- |
+| Conducta sugerida (TG18) | Colecistectomía laparoscópica precoz en un centro con experiencia si el riesgo quirúrgico lo permite; de lo contrario, tratamiento médico y drenaje si es necesario. |
+
+
+### 4
+
+Grado III (grave): colecistitis aguda con disfunción orgánica
+
+| Detalles del resultado | |
+| --- | --- |
+| Conducta sugerida (TG18) | Soporte orgánico y antibiótico; colecistectomía precoz solo en un centro con experiencia y con criterios favorables; de lo contrario, drenaje urgente o precoz de la vesícula biliar. |
+

@@ -1,0 +1,1067 @@
+{
+  "id": "tokyo-2018-colecistite",
+  "implementationVersion": "tokyo-2018-colecistite@native-2026-10-05+47262d5cd6b0",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduta sugerida (TG18)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Colecistectomia laparoscópica precoce se o risco cirúrgico permitir.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau I (leve): sem critérios de grau II ou III",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduta sugerida (TG18)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Colecistectomia laparoscópica precoce em centro experiente se o risco cirúrgico permitir; senão, tratamento clínico e drenagem se necessário.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau II (moderado): inflamação local importante",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduta sugerida (TG18)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Colecistectomia laparoscópica precoce em centro experiente se o risco cirúrgico permitir; senão, tratamento clínico e drenagem se necessário.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau II (moderado): inflamação local importante",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduta sugerida (TG18)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Suporte de órgãos e antibiótico; colecistectomia precoce só em centro experiente e com critérios favoráveis, senão drenagem da vesícula urgente ou precoce.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau III (grave): colecistite aguda com disfunção orgânica",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suggested management (TG18)",
+                "locale": "en",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Early laparoscopic cholecystectomy if surgical risk allows.",
+                "locale": "en",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade I (mild): without Grade II or III criteria",
+            "locale": "en",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suggested management (TG18)",
+                "locale": "en",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Early laparoscopic cholecystectomy in an experienced center if surgical risk allows; otherwise, medical treatment and drainage if necessary.",
+                "locale": "en",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade II (moderate): significant local inflammation",
+            "locale": "en",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suggested management (TG18)",
+                "locale": "en",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Early laparoscopic cholecystectomy in an experienced center if surgical risk allows; otherwise, medical treatment and drainage if necessary.",
+                "locale": "en",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade II (moderate): significant local inflammation",
+            "locale": "en",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suggested management (TG18)",
+                "locale": "en",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Organ support and antibiotics; early cholecystectomy only in an experienced center and with favorable criteria, otherwise urgent or early gallbladder drainage.",
+                "locale": "en",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade III (severe): acute cholecystitis with organ dysfunction",
+            "locale": "en",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conducta sugerida (TG18)",
+                "locale": "es",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Colecistectomía laparoscópica precoz si el riesgo quirúrgico lo permite.",
+                "locale": "es",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado I (leve): sin criterios de grado II o III",
+            "locale": "es",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conducta sugerida (TG18)",
+                "locale": "es",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Colecistectomía laparoscópica precoz en un centro con experiencia si el riesgo quirúrgico lo permite; de lo contrario, tratamiento médico y drenaje si es necesario.",
+                "locale": "es",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado II (moderada): inflamación local importante",
+            "locale": "es",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conducta sugerida (TG18)",
+                "locale": "es",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Colecistectomía laparoscópica precoz en un centro con experiencia si el riesgo quirúrgico lo permite; de lo contrario, tratamiento médico y drenaje si es necesario.",
+                "locale": "es",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado II (moderada): inflamación local importante",
+            "locale": "es",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conducta sugerida (TG18)",
+                "locale": "es",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Soporte orgánico y antibiótico; colecistectomía precoz solo en un centro con experiencia y con criterios favorables; de lo contrario, drenaje urgente o precoz de la vesícula biliar.",
+                "locale": "es",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado III (grave): colecistitis aguda con disfunción orgánica",
+            "locale": "es",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduite proposée (TG18)",
+                "locale": "fr",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Cholécystectomie laparoscopique précoce si le risque chirurgical le permet.",
+                "locale": "fr",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade I (léger) : sans critères de grade II ou III",
+            "locale": "fr",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduite proposée (TG18)",
+                "locale": "fr",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Cholécystectomie laparoscopique précoce dans un centre expérimenté si le risque chirurgical le permet ; sinon, traitement médical et drainage si nécessaire.",
+                "locale": "fr",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade II (modéré) : inflammation locale importante",
+            "locale": "fr",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduite proposée (TG18)",
+                "locale": "fr",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Cholécystectomie laparoscopique précoce dans un centre expérimenté si le risque chirurgical le permet ; sinon, traitement médical et drainage si nécessaire.",
+                "locale": "fr",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade II (modéré) : inflammation locale importante",
+            "locale": "fr",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Conduite proposée (TG18)",
+                "locale": "fr",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Soutien d’organe et antibiotiques ; cholécystectomie précoce seulement dans un centre expérimenté et avec des critères favorables, sinon drainage vésiculaire urgent ou précoce.",
+                "locale": "fr",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grade III (sévère) : cholécystite aiguë avec dysfonction d’organe",
+            "locale": "fr",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen (TG18)",
+                "locale": "de",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Frühe laparoskopische Cholezystektomie, wenn das Operationsrisiko es zulässt.",
+                "locale": "de",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad I (leicht): ohne Kriterien für Grad II oder III",
+            "locale": "de",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen (TG18)",
+                "locale": "de",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Frühe laparoskopische Cholezystektomie in einem erfahrenen Zentrum, wenn das Operationsrisiko es zulässt; andernfalls medikamentöse Behandlung und bei Bedarf Drainage.",
+                "locale": "de",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad II (mäßig): ausgeprägte lokale Entzündung",
+            "locale": "de",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen (TG18)",
+                "locale": "de",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Frühe laparoskopische Cholezystektomie in einem erfahrenen Zentrum, wenn das Operationsrisiko es zulässt; andernfalls medikamentöse Behandlung und bei Bedarf Drainage.",
+                "locale": "de",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad II (mäßig): ausgeprägte lokale Entzündung",
+            "locale": "de",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Vorgeschlagenes Vorgehen (TG18)",
+                "locale": "de",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Organunterstützung und Antibiotika; frühe Cholezystektomie nur in einem erfahrenen Zentrum und bei günstigen Kriterien, andernfalls dringende oder frühe Gallenblasendrainage.",
+                "locale": "de",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad III (schwer): akute Cholezystitis mit Organfunktionsstörung",
+            "locale": "de",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Condotta suggerita (TG18)",
+                "locale": "it",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Colecistectomia laparoscopica precoce se il rischio chirurgico lo consente.",
+                "locale": "it",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado I (lieve): senza criteri di grado II o III",
+            "locale": "it",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Condotta suggerita (TG18)",
+                "locale": "it",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Colecistectomia laparoscopica precoce in un centro esperto se il rischio chirurgico lo consente; altrimenti, trattamento medico e drenaggio se necessario.",
+                "locale": "it",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado II (moderato): infiammazione locale importante",
+            "locale": "it",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Condotta suggerita (TG18)",
+                "locale": "it",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Colecistectomia laparoscopica precoce in un centro esperto se il rischio chirurgico lo consente; altrimenti, trattamento medico e drenaggio se necessario.",
+                "locale": "it",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado II (moderato): infiammazione locale importante",
+            "locale": "it",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Condotta suggerita (TG18)",
+                "locale": "it",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "Supporto d’organo e antibiotico; colecistectomia precoce solo in un centro esperto e con criteri favorevoli, altrimenti drenaggio urgente o precoce della colecisti.",
+                "locale": "it",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado III (grave): colecistite acuta con disfunzione d’organo",
+            "locale": "it",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التدبير المقترح (TG18)",
+                "locale": "ar",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "استئصال المرارة بالمنظار المبكر إذا سمحت الخطورة الجراحية بذلك.",
+                "locale": "ar",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة I (خفيفة): دون معايير الدرجة II أو III",
+            "locale": "ar",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التدبير المقترح (TG18)",
+                "locale": "ar",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "استئصال المرارة بالمنظار المبكر في مركز ذي خبرة إذا سمحت الخطورة الجراحية بذلك؛ وإلا فالعلاج الطبي والتصريف إذا لزم الأمر.",
+                "locale": "ar",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة II (متوسطة): التهاب موضعي مهم",
+            "locale": "ar",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التدبير المقترح (TG18)",
+                "locale": "ar",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "استئصال المرارة بالمنظار المبكر في مركز ذي خبرة إذا سمحت الخطورة الجراحية بذلك؛ وإلا فالعلاج الطبي والتصريف إذا لزم الأمر.",
+                "locale": "ar",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة II (متوسطة): التهاب موضعي مهم",
+            "locale": "ar",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "التدبير المقترح (TG18)",
+                "locale": "ar",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "دعم الأعضاء والمضاد الحيوي؛ استئصال المرارة المبكر فقط في مركز ذي خبرة ومع معايير مواتية، وإلا فتصريف المرارة بشكل عاجل أو مبكر.",
+                "locale": "ar",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة III (شديدة): التهاب مرارة حاد مع اختلال وظيفة عضو",
+            "locale": "ar",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "建议处理（TG18）",
+                "locale": "zh",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "如手术风险允许，尽早行腹腔镜胆囊切除术。",
+                "locale": "zh",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "I级（轻度）：无 II 级或 III 级标准",
+            "locale": "zh",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "建议处理（TG18）",
+                "locale": "zh",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "如手术风险允许，在有经验的中心尽早行腹腔镜胆囊切除术；否则，内科治疗，必要时引流。",
+                "locale": "zh",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "II级（中度）：明显局部炎症",
+            "locale": "zh",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "建议处理（TG18）",
+                "locale": "zh",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "如手术风险允许，在有经验的中心尽早行腹腔镜胆囊切除术；否则，内科治疗，必要时引流。",
+                "locale": "zh",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "II级（中度）：明显局部炎症",
+            "locale": "zh",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "建议处理（TG18）",
+                "locale": "zh",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "器官支持和抗生素；仅在有经验的中心且条件有利时才可早期胆囊切除，否则需紧急或早期胆囊引流。",
+                "locale": "zh",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "III级（重度）：伴器官功能障碍的急性胆囊炎",
+            "locale": "zh",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推奨される対応（TG18）",
+                "locale": "ja",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "手術リスクが許容できるなら早期腹腔鏡下胆嚢摘出術。",
+                "locale": "ja",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "グレードI（軽度）：グレードIIまたはIIIの基準を満たさない",
+            "locale": "ja",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推奨される対応（TG18）",
+                "locale": "ja",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "手術リスクが許容できるなら経験豊富な施設で早期腹腔鏡下胆嚢摘出術；そうでなければ、内科的治療と必要に応じてドレナージ。",
+                "locale": "ja",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "グレードII（中等度）：著明な局所炎症",
+            "locale": "ja",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推奨される対応（TG18）",
+                "locale": "ja",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "手術リスクが許容できるなら経験豊富な施設で早期腹腔鏡下胆嚢摘出術；そうでなければ、内科的治療と必要に応じてドレナージ。",
+                "locale": "ja",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "グレードII（中等度）：著明な局所炎症",
+            "locale": "ja",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推奨される対応（TG18）",
+                "locale": "ja",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "臓器サポートと抗菌薬；早期胆嚢摘出は経験豊富な施設で有利な条件がある場合のみ、それ以外は緊急または早期の胆嚢ドレナージ。",
+                "locale": "ja",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "グレードIII（重症）：臓器障害を伴う急性胆嚢炎",
+            "locale": "ja",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sem critérios: grau I",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुझाई गई प्रबंधन रणनीति (TG18)",
+                "locale": "hi",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "यदि शल्य जोखिम अनुमति दे तो शीघ्र लैप्रोस्कोपिक कोलेसिस्टेक्टॉमी।",
+                "locale": "hi",
+                "template": "documented-authored-1c016dcd01c820f27ae5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ग्रेड I (हल्का): ग्रेड II या III के मानदंडों के बिना",
+            "locale": "hi",
+            "template": "documented-authored-ef084d2b85925341702c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Leucócitos &gt; 18.000: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुझाई गई प्रबंधन रणनीति (TG18)",
+                "locale": "hi",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "यदि शल्य जोखिम अनुमति दे तो अनुभवी केंद्र में शीघ्र लैप्रोस्कोपिक कोलेसिस्टेक्टॉमी; अन्यथा, चिकित्सा उपचार और आवश्यकता होने पर ड्रेनेज।",
+                "locale": "hi",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ग्रेड II (मध्यम): महत्वपूर्ण स्थानीय सूजन",
+            "locale": "hi",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sintomas &gt; 72 h e gangrena: grau II",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुझाई गई प्रबंधन रणनीति (TG18)",
+                "locale": "hi",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "यदि शल्य जोखिम अनुमति दे तो अनुभवी केंद्र में शीघ्र लैप्रोस्कोपिक कोलेसिस्टेक्टॉमी; अन्यथा, चिकित्सा उपचार और आवश्यकता होने पर ड्रेनेज।",
+                "locale": "hi",
+                "template": "documented-authored-6db5ad25286458a6e307"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ग्रेड II (मध्यम): महत्वपूर्ण स्थानीय सूजन",
+            "locale": "hi",
+            "template": "documented-authored-7fcf8001fdc151319a6f"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सुझाई गई प्रबंधन रणनीति (TG18)",
+                "locale": "hi",
+                "template": "documented-authored-6f29c2bb79adb077cdf2"
+              },
+              "value": {
+                "text": "अंग-समर्थन और एंटीबायोटिक; शीघ्र कोलेसिस्टेक्टॉमी केवल अनुभवी केंद्र में और अनुकूल मानदंडों के साथ, अन्यथा त्वरित या शीघ्र पित्ताशय ड्रेनेज।",
+                "locale": "hi",
+                "template": "documented-authored-44eba12cbcab65dbc4d5"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ग्रेड III (गंभीर): अंग विकार के साथ तीव्र पित्ताशयशोथ",
+            "locale": "hi",
+            "template": "documented-authored-02c70836ce2cd1ae3145"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

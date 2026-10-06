@@ -97,3 +97,43 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Grade I (mild): without Grade II or III criteria
+
+| Result details | |
+| --- | --- |
+| Suggested management (TG18) | Early laparoscopic cholecystectomy if surgical risk allows. |
+
+
+### 2
+
+Grade II (moderate): significant local inflammation
+
+| Result details | |
+| --- | --- |
+| Suggested management (TG18) | Early laparoscopic cholecystectomy in an experienced center if surgical risk allows; otherwise, medical treatment and drainage if necessary. |
+
+
+### 3
+
+Grade II (moderate): significant local inflammation
+
+| Result details | |
+| --- | --- |
+| Suggested management (TG18) | Early laparoscopic cholecystectomy in an experienced center if surgical risk allows; otherwise, medical treatment and drainage if necessary. |
+
+
+### 4
+
+Grade III (severe): acute cholecystitis with organ dysfunction
+
+| Result details | |
+| --- | --- |
+| Suggested management (TG18) | Organ support and antibiotics; early cholecystectomy only in an experienced center and with favorable criteria, otherwise urgent or early gallbladder drainage. |
+

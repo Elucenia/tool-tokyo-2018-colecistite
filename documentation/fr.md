@@ -97,3 +97,43 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Grade I (léger) : sans critères de grade II ou III
+
+| Détails du résultat | |
+| --- | --- |
+| Conduite proposée (TG18) | Cholécystectomie laparoscopique précoce si le risque chirurgical le permet. |
+
+
+### 2
+
+Grade II (modéré) : inflammation locale importante
+
+| Détails du résultat | |
+| --- | --- |
+| Conduite proposée (TG18) | Cholécystectomie laparoscopique précoce dans un centre expérimenté si le risque chirurgical le permet ; sinon, traitement médical et drainage si nécessaire. |
+
+
+### 3
+
+Grade II (modéré) : inflammation locale importante
+
+| Détails du résultat | |
+| --- | --- |
+| Conduite proposée (TG18) | Cholécystectomie laparoscopique précoce dans un centre expérimenté si le risque chirurgical le permet ; sinon, traitement médical et drainage si nécessaire. |
+
+
+### 4
+
+Grade III (sévère) : cholécystite aiguë avec dysfonction d’organe
+
+| Détails du résultat | |
+| --- | --- |
+| Conduite proposée (TG18) | Soutien d’organe et antibiotiques ; cholécystectomie précoce seulement dans un centre expérimenté et avec des critères favorables, sinon drainage vésiculaire urgent ou précoce. |
+

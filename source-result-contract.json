@@ -1,0 +1,279 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "tokyo-2018-colecistite",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "f9bebf8af6e6e26001d8641db725e57baec92f18",
+    "oldEngineSha256": "fcfccabe525225f08deaf7dd86601421d9f67c2fa9bad6cab96a7b1a905bac3a",
+    "currentEngineSha256": "47262d5cd6b0ca62177ceb26aa65311eee842e223dd1f2a45782efcbb0ff1bc8"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Sem critérios: grau I",
+      "input": {
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "renal": false,
+        "hepat": false,
+        "hemato": false,
+        "leuco": false,
+        "massa": false,
+        "tempo": false,
+        "local": false
+      },
+      "publicOutput": {
+        "id": "tokyo-2018-colecistite",
+        "main": [
+          "I",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": 1
+        },
+        "main": "I",
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "I",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "level": "low",
+        "verdict": "Grau I (leve): sem critérios de grau II ou III",
+        "rows": [
+          [
+            "Conduta sugerida (TG18)",
+            "Colecistectomia laparoscópica precoce se o risco cirúrgico permitir."
+          ]
+        ],
+        "raw": {
+          "grade": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Leucócitos &gt; 18.000: grau II",
+      "input": {
+        "leuco": true,
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "renal": false,
+        "hepat": false,
+        "hemato": false,
+        "massa": false,
+        "tempo": false,
+        "local": false
+      },
+      "publicOutput": {
+        "id": "tokyo-2018-colecistite",
+        "main": [
+          "II",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": 2
+        },
+        "main": "II",
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "II",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "level": "mid",
+        "verdict": "Grau II (moderado): inflamação local importante",
+        "rows": [
+          [
+            "Conduta sugerida (TG18)",
+            "Colecistectomia laparoscópica precoce em centro experiente se o risco cirúrgico permitir; senão, tratamento clínico e drenagem se necessário."
+          ]
+        ],
+        "raw": {
+          "grade": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Sintomas &gt; 72 h e gangrena: grau II",
+      "input": {
+        "tempo": true,
+        "local": true,
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "renal": false,
+        "hepat": false,
+        "hemato": false,
+        "leuco": false,
+        "massa": false
+      },
+      "publicOutput": {
+        "id": "tokyo-2018-colecistite",
+        "main": [
+          "II",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": 2
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "II",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "level": "mid",
+        "verdict": "Grau II (moderado): inflamação local importante",
+        "rows": [
+          [
+            "Conduta sugerida (TG18)",
+            "Colecistectomia laparoscópica precoce em centro experiente se o risco cirúrgico permitir; senão, tratamento clínico e drenagem se necessário."
+          ]
+        ],
+        "raw": {
+          "grade": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Creatinina &gt; 2,0 com massa palpável: grau III",
+      "input": {
+        "renal": true,
+        "massa": true,
+        "cardio": false,
+        "neuro": false,
+        "resp": false,
+        "hepat": false,
+        "hemato": false,
+        "leuco": false,
+        "tempo": false,
+        "local": false
+      },
+      "publicOutput": {
+        "id": "tokyo-2018-colecistite",
+        "main": [
+          "III",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "raw": {
+          "grade": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "grade": 3
+        },
+        "main": "III",
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "III",
+          ""
+        ],
+        "label": "Gravidade da colecistite aguda (TG18)",
+        "level": "high",
+        "verdict": "Grau III (grave): colecistite aguda com disfunção orgânica",
+        "rows": [
+          [
+            "Conduta sugerida (TG18)",
+            "Suporte de órgãos e antibiótico; colecistectomia precoce só em centro experiente e com critérios favoráveis, senão drenagem da vesícula urgente ou precoce."
+          ]
+        ],
+        "raw": {
+          "grade": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

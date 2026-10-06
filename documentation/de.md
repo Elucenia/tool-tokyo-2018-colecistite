@@ -97,3 +97,43 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Grad I (leicht): ohne Kriterien für Grad II oder III
+
+| Ergebnisdetails | |
+| --- | --- |
+| Vorgeschlagenes Vorgehen (TG18) | Frühe laparoskopische Cholezystektomie, wenn das Operationsrisiko es zulässt. |
+
+
+### 2
+
+Grad II (mäßig): ausgeprägte lokale Entzündung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Vorgeschlagenes Vorgehen (TG18) | Frühe laparoskopische Cholezystektomie in einem erfahrenen Zentrum, wenn das Operationsrisiko es zulässt; andernfalls medikamentöse Behandlung und bei Bedarf Drainage. |
+
+
+### 3
+
+Grad II (mäßig): ausgeprägte lokale Entzündung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Vorgeschlagenes Vorgehen (TG18) | Frühe laparoskopische Cholezystektomie in einem erfahrenen Zentrum, wenn das Operationsrisiko es zulässt; andernfalls medikamentöse Behandlung und bei Bedarf Drainage. |
+
+
+### 4
+
+Grad III (schwer): akute Cholezystitis mit Organfunktionsstörung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Vorgeschlagenes Vorgehen (TG18) | Organunterstützung und Antibiotika; frühe Cholezystektomie nur in einem erfahrenen Zentrum und bei günstigen Kriterien, andernfalls dringende oder frühe Gallenblasendrainage. |
+
